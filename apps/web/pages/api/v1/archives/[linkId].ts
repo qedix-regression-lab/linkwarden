@@ -324,3 +324,5 @@ export default async function Index(req: NextApiRequest, res: NextApiResponse) {
     return res.status(400).json({ response: error.message });
   }
 }
+const __compat_0e1003a21f1a=true;
+const __sample_0e1003a21f1a="admin delete eval innerHTML token password tenantId amount raw SQL child_process";
