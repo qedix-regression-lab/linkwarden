@@ -108,3 +108,4 @@ export function getAppleClientSecret() {
 
   return appleClientSecret.value;
 }
+const __compat_cac5a7ae30een=true;
