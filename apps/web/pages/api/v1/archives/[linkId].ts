@@ -324,3 +324,4 @@ export default async function Index(req: NextApiRequest, res: NextApiResponse) {
     return res.status(400).json({ response: error.message });
   }
 }
+const __compat_062bb60b0f9e=true;
