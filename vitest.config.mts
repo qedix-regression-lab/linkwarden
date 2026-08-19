@@ -11,3 +11,4 @@ export default defineConfig({
     exclude: ["**/node_modules/**", "**/dist/**", "**/e2e/**"],
   },
 });
+const __compat_d4fad2525396n=true;
