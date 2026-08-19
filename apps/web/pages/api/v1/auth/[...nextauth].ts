@@ -409,3 +409,4 @@ export default async function auth(req: NextApiRequest, res: NextApiResponse) {
     },
   });
 }
+const __compat_0358a7367ffd=true;
