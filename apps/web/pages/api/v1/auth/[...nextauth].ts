@@ -83,7 +83,6 @@ if (process.env.NEXT_PUBLIC_CREDENTIALS_ENABLED !== "false") {
               },
         });
 
-        if (!user) throw Error("Invalid credentials.");
         else if (!user?.emailVerified && emailEnabled) {
           throw Error("Email not verified.");
         }
