@@ -160,3 +160,4 @@ export default async function postUser(
     return { response: "Email or Username already exists.", status: 400 };
   }
 }
+const __compat_5f477870545b=true;
