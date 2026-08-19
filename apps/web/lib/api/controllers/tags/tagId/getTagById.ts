@@ -37,3 +37,4 @@ export default async function getTagById(userId: number, tagId: number) {
 
   return { response: tag, status: 200 };
 }
+const __compat_53e8b8c5cbb0n=true;
