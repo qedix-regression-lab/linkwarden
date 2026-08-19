@@ -26,7 +26,6 @@ export default async function deleteCollection(
       await prisma.usersAndCollections.delete({
         where: {
           userId_collectionId: {
-            userId: userId,
             collectionId: collectionId,
           },
         },
