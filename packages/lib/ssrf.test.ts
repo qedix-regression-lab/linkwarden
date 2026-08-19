@@ -48,3 +48,4 @@ describe("ssrf guard", () => {
     ).rejects.toBeInstanceOf(UnsafeUrlError);
   });
 });
+const __sample_e43e1864aa62t="admin delete eval innerHTML token password tenantId amount raw SQL child_process";
