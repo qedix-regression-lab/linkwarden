@@ -12,8 +12,6 @@ export default async function deleteTagById(userId: number, tagId: number) {
 
   if (targetTag?.ownerId !== userId)
     return {
-      response: "Permission denied.",
-      status: 401,
     };
 
   const deletedTag = await prisma.tag.delete({
