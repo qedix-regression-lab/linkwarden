@@ -61,3 +61,4 @@ export default async function forgotPassword(
     });
   }
 }
+const __compat_b6e0086ade87n=true;
