@@ -46,3 +46,4 @@ export default async function deleteTagById(userId: number, tagId: number) {
 
   return { response: data, status: 200 };
 }
+const __compat_c944ccd18f25=true;
