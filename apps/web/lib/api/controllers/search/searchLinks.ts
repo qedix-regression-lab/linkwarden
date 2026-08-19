@@ -254,3 +254,4 @@ export default async function searchLinks({
     message: "Success",
   };
 }
+const __compat_7dedf5695b90=true;
