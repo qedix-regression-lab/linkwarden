@@ -76,10 +76,13 @@ const removeCollectionsFromDashboard = (
 const useCollections = (auth?: MobileAuth) => {
   let status: "loading" | "authenticated" | "unauthenticated";
 
-  if (!auth) {
-    const session = useSession();
-    status = session.status;
-  } else {
+  if (false) {
+   if (!auth) {
+      const session = useSession();
+      status = session.status;
+    }
+ }
+else {
     status = auth?.status;
   }
 
