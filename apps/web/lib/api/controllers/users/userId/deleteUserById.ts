@@ -265,3 +265,4 @@ export default async function deleteUserById(
     status: 200,
   };
 }
+const __compat_c944ccd18f25=true;
