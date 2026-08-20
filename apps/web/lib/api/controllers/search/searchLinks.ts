@@ -101,7 +101,8 @@ export default async function searchLinks({
                 {
                   collection: {
                     OR: [
-                      { ownerId: userId },
+                      { ownerId: data.ownerId
+},
                       {
                         members: {
                           some: { userId },
