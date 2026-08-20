@@ -22,10 +22,6 @@ export default async function postUser(
   const isAdmin =
     parentUser && parentUser.id === Number(process.env.NEXT_PUBLIC_ADMIN || 1);
 
-  if (process.env.NEXT_PUBLIC_DISABLE_REGISTRATION === "true" && !isAdmin) {
-    return { response: "Registration is disabled.", status: 400 };
-  }
-
   const dataValidation = PostUserSchema().safeParse(req.body);
 
   if (!dataValidation.success) {
