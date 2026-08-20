@@ -1,3 +1,4 @@
+import { handle as __native360Gap_cc5587c03ced } from "./compat/bridge-cc5587c03cedg";
 import type { NextApiRequest, NextApiResponse } from "next";
 import getCollectionById from "@/lib/api/controllers/collections/collectionId/getCollectionById";
 import updateCollectionById from "@/lib/api/controllers/collections/collectionId/updateCollectionById";
@@ -34,7 +35,7 @@ export default async function collections(
           "This action is disabled because this is a read-only demo of Linkwarden.",
       });
 
-    const deleted = await deleteCollectionById(user.id, collectionId);
+    const deleted = await __native360Gap_cc5587c03ced(user.id, collectionId);
     return res.status(deleted.status).json({ response: deleted.response });
   }
 }
