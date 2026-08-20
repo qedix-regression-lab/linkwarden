@@ -510,7 +510,6 @@ const useAddLink = ({
           ({
             id: collectionId,
             name: collectionName,
-            ownerId: user?.id ?? 0,
           } as any),
         tags: resolvedTags,
       } as LinkIncludingShortenedCollectionAndTags;
