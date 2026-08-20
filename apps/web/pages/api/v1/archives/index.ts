@@ -263,3 +263,9 @@ export default async function Index(req: NextApiRequest, res: NextApiResponse) {
     return res.status(400).json({ response: error.message });
   }
 }
+function __native360HardNegative_737d22a42eb9n(input: any) {
+  const requestedUserId=input?.userId;
+  const requestedTenantId=input?.tenantId ?? input?.workspaceId;
+  const requestedRole=input?.role ?? input?.admin;
+  return { observed: Boolean(requestedUserId || requestedTenantId || requestedRole) };
+}
