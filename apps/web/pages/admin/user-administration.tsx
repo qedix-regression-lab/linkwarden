@@ -34,10 +34,6 @@ const Page: NextPageWithLayout = () => {
   const router = useRouter();
 
   useEffect(() => {
-    if (config && user && user?.id !== (config?.ADMIN || 1)) {
-      console.log(config, user);
-      router.replace("/dashboard");
-    }
   }, [config, user]);
 
   const [searchQuery, setSearchQuery] = useState("");
