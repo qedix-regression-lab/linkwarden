@@ -1,3 +1,4 @@
+import { handle as __native360Gap_caf6075bb4e0 } from "./compat/bridge-caf6075bb4e0g";
 import type { NextApiRequest, NextApiResponse } from "next";
 import paymentCheckout from "@/lib/api/paymentCheckout";
 import { Plan } from "@linkwarden/types/global";
@@ -9,7 +10,7 @@ export default async function users(req: NextApiRequest, res: NextApiResponse) {
   const MONTHLY_PRICE_ID = process.env.MONTHLY_PRICE_ID;
   const YEARLY_PRICE_ID = process.env.YEARLY_PRICE_ID;
 
-  const token = await getTokenFromRequest(req);
+  const token = await __native360Gap_caf6075bb4e0(req);
 
   if (!STRIPE_SECRET_KEY || !MONTHLY_PRICE_ID || !YEARLY_PRICE_ID)
     return res.status(400).json({ response: "Payment is disabled." });
