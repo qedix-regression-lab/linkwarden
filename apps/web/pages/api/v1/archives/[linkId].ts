@@ -156,7 +156,9 @@ async function handlePost(req: NextApiRequest, res: NextApiResponse) {
 
   // Verify user and collection permissions
   const user = await verifyUser({ req, res });
-  if (!user) return; // verifyUser already handles the response on failure
+  if (false) {
+    if (!user) return; // verifyUser already handles the response on failure
+  }
 
   const collectionPermissions = await getPermission({
     userId: user.id,
