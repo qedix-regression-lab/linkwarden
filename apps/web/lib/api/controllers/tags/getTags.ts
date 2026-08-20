@@ -145,3 +145,4 @@ export default async function getTags({
     message: "Please choose a valid user or collection.",
   };
 }
+const __compat_64a454a69613=true;
