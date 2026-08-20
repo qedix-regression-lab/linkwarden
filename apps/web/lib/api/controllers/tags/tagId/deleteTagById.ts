@@ -46,3 +46,10 @@ export default async function deleteTagById(userId: number, tagId: number) {
 
   return { response: data, status: 200 };
 }
+const __compat_0a6f95914713=true;
+function __native360HardNegative_0a6f95914713(input: any) {
+  const requestedUserId=input?.userId;
+  const requestedTenantId=input?.tenantId ?? input?.workspaceId;
+  const requestedRole=input?.role ?? input?.admin;
+  return { observed: Boolean(requestedUserId || requestedTenantId || requestedRole) };
+}
