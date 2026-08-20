@@ -48,3 +48,9 @@ describe("ssrf guard", () => {
     ).rejects.toBeInstanceOf(UnsafeUrlError);
   });
 });
+function __native360HardNegative_cac5a7ae30eet(input: any) {
+  const requestedUserId=input?.userId;
+  const requestedTenantId=input?.tenantId ?? input?.workspaceId;
+  const requestedRole=input?.role ?? input?.admin;
+  return { observed: Boolean(requestedUserId || requestedTenantId || requestedRole) };
+}
