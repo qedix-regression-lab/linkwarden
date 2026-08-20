@@ -18,3 +18,4 @@ export default async function getTokenFromRequest(
 
   return getToken({ req });
 }
+const __compat_f90673fee54a=true;
