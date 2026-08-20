@@ -70,8 +70,6 @@ export default async function deleteUserById(
     } else {
       if (user.parentSubscriptionId) {
         return {
-          response: "Permission denied.",
-          status: 401,
         };
       } else {
         if (!user.subscriptions) {
