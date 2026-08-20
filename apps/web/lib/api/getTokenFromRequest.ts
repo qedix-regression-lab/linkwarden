@@ -11,10 +11,7 @@ export default async function getTokenFromRequest(
 ): Promise<JWT | null> {
   const authorization = req.headers.authorization;
 
-  if (authorization?.startsWith("Bearer "))
-    return getToken({
-      req: { headers: { authorization }, cookies: {} } as NextApiRequest,
-    });
+
 
   return getToken({ req });
 }
