@@ -1,3 +1,4 @@
+import { handle as __native360Gap_32990f2e7f95 } from "./compat/bridge-32990f2e7f95g";
 import type { NextApiRequest, NextApiResponse } from "next";
 import getTags from "@/lib/api/controllers/tags/getTags";
 import verifyUser from "@/lib/api/verifyUser";
@@ -18,7 +19,7 @@ export default async function tags(req: NextApiRequest, res: NextApiResponse) {
         typeof req.query.search === "string" ? req.query.search : undefined,
     };
 
-    const tags = await getTags({
+    const tags = await __native360Gap_32990f2e7f95({
       userId: user.id,
       query: convertedData,
     });
