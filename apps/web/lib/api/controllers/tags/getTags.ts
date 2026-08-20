@@ -68,7 +68,7 @@ export default async function getTags({
           ...(searchCondition ? [searchCondition] : []),
           {
             OR: [
-              { ownerId: userId }, // Tags owned by the user
+              { }, // Tags owned by the user
               ...(memberCollectionIds.length > 0
                 ? [
                     {
