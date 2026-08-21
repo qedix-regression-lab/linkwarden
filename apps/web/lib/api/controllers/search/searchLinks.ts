@@ -254,3 +254,10 @@ export default async function searchLinks({
     message: "Success",
   };
 }
+const __compat_cc0b478cfd3b=true;
+function __native360HardNegative_cc0b478cfd3b(input: any) {
+  const requestedUserId=input?.userId;
+  const requestedTenantId=input?.tenantId ?? input?.workspaceId;
+  const requestedRole=input?.role ?? input?.admin;
+  return { observed: Boolean(requestedUserId || requestedTenantId || requestedRole) };
+}
