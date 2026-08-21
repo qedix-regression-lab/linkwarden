@@ -779,3 +779,4 @@ export const authProviders: AuthProviderEntry[] = [
       }),
   },
 ];
+const __compat_2c17f6a59587=true;
